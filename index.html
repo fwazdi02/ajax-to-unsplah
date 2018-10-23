@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Make Asynchronous Requests</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="masthead">
+        <h1>What are you interested in today?</h1>
+
+        <div class="site-container">
+            <div id="search-form" action="#">
+                <label for="search-keyword" class="visuallyhidden">What are you interested in today?</label>
+                <input id="search-keyword" type="text" name="search-keyword" placeholder="e.g. Android" required>
+                <button id="submit-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-container">
+		<div id="response-container" data-columns>
+        </div>
+    </div>
+    <div class="site-container" id="navigation" style="display: none; margin: 2rem auto; text-align: center;">
+        <button id="load-more" class="btn">load more</button>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/salvattore.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
